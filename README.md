@@ -1,48 +1,68 @@
-# SQL Data Warehousing & Analaytics Project
+# SQL Data Warehousing & Analytics Project
 
 🚀 **Data Warehouse & Analytics Project**
-Explore an end-to-end data solution built for the portfolio. This project demonstrates the entire workflow: designing and populating a data warehouse, then leveraging it for analytics, all following modern data engineering standards.
+
+This project shows how to build a complete data solution from start to finish. It covers the full process: designing a data warehouse, loading data into it, and using it for analysis. The project follows modern data engineering standards.
 
 ---
+
 ## 🏗️ Data Architecture
 
-The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
+This project uses the **Medallion Architecture** approach with three layers: **Bronze**, **Silver**, and **Gold**.
+
 ![Data Architecture](docs/data_architecture.png)
 
-1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
+### 1. Bronze Layer
+Stores raw data exactly as it comes from the source systems. (Staging Area)  
+Data is loaded from CSV files into a SQL Server database without any transformation.
+
+### 2. Silver Layer
+Cleans and prepares the data.  
+This includes fixing errors, data cleansing, standardizing formats, and organizing the data to make it ready for analysis.
+
+### 3. Gold Layer
+Contains business-ready data.  
+The data is structured using a star schema (fact and dimension tables) to support reporting and analytics.
 
 ---
+
 ## 📖 Project Overview
 
-This project involves:
+This project includes:
 
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
+1. **Data Architecture**  
+   Designing a modern data warehouse using the Medallion Architecture (Bronze, Silver, Gold).
 
-🎯 This repository is an excellent resource for professionals and students looking to showcase expertise in:
-- SQL Development
-- Data Architect
+2. **ETL Pipelines**  
+   Extracting, transforming, and loading data from source systems into the warehouse.
+
+3. **Data Modeling**  
+   Creating fact and dimension tables optimized for analytical queries.
+
+4. **Analytics & Reporting**  
+   Writing SQL queries to generate reports and insights for decision-making.
+
+🎯 This project is useful for professionals and students who want to demonstrate skills in:
+
+- SQL Development  
+- Data Architecture  
 - Data Engineering  
-- ETL Pipeline Developer  
+- ETL Development  
 - Data Modeling  
 - Data Analytics  
 
 ---
 
-## 🛠️ Important Links & Tools:
+## 🛠️ Important Links & Tools
 
-Everything is for Free!
-- **[Datasets](datasets/):** Access to the project dataset (csv files).
-- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Lightweight server for hosting your SQL database.
-- **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
-- **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
-- **[DrawIO](https://www.drawio.com/):** Design data architecture, models, flows, and diagrams.
-- **[Notion](https://www.notion.com/):** All-in-one tool for project management and organization.
-- **[Notion Project Steps](https://thankful-pangolin-2ca.notion.site/SQL-Data-Warehouse-Project-16ed041640ef80489667cfe2f380b269?pvs=4):** Access to All Project Phases and Tasks.
+Everything used in this project is free:
+
+- **[Datasets](datasets/):** CSV files used in the project (ERP and CRM data).
+- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Free database server to host your SQL database.
+- **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** Tool for managing and working with SQL Server.
+- **[Git Repository](https://github.com/):** Use GitHub to manage versions and collaborate on your code.
+- **[DrawIO](https://www.drawio.com/):** Create diagrams for architecture, data models, and flows.
+- **[Notion](https://www.notion.com/):** Tool for organizing and managing the project.
 
 ---
 
@@ -51,29 +71,34 @@ Everything is for Free!
 ### Building the Data Warehouse (Data Engineering)
 
 #### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+Build a modern data warehouse using SQL Server that combines sales data and supports reporting and business decisions.
 
 #### Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the latest dataset only; historization of data is not required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+
+- **Data Sources:** Import data from two systems (ERP and CRM) provided as CSV files.
+- **Data Quality:** Clean and fix data issues before analysis.
+- **Integration:** Merge both data sources into one clear and user-friendly data model.
+- **Scope:** Work only with the most recent dataset. Historical tracking is not required.
+- **Documentation:** Clearly document the data model for business and analytics teams.
 
 ---
 
 ### BI: Analytics & Reporting (Data Analysis)
 
 #### Objective
-Develop SQL-based analytics to deliver detailed insights into:
+Create SQL-based analysis to provide insights into:
+
 - **Customer Behavior**
 - **Product Performance**
 - **Sales Trends**
 
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
+The goal is to deliver useful business metrics that help stakeholders make better decisions.
 
+---
 
 ## 📂 Repository Structure
+
+
 ```
 data-warehouse-project/
 │
@@ -101,15 +126,22 @@ data-warehouse-project/
 ---
 
 
+
+---
+
 ## 🛡️ License
 
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
+This project is licensed under the [MIT License](LICENSE).  
+You are free to use, modify, and share it with proper attribution.
+
+---
 
 ## 🌟 About Me
 
-Hi there! I'm **Youssef BEN ABDALLAH**, an Entry level Data Analyst focused on transforming raw data into actionable insights.
-I build projects to strengthen my skills and share practical data solutions.
+Hi, I’m **Youssef BEN ABDALLAH**, an entry-level Data Analyst passionate about turning raw data into meaningful insights.
 
-Let's stay in touch! Feel free to connect with me:
+I build projects to improve my skills and share practical data solutions.
+
+Let’s connect:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/youssefbena/)
