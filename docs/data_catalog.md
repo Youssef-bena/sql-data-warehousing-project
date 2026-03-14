@@ -33,7 +33,7 @@
 | Helper tables | _Measures|
 | Active relationships | 4 |
 | Inactive relationships | 2 (role-playing dates on dim_date) |
-| **Measures** | **35** (cleaned from 69 — 34 unused removed in v1.1) |
+| **Measures** | **35**  |
 | Calculated columns | 9 on fact_sales · 5 on dim_customers · 1 on dim_products |
 
 ---
